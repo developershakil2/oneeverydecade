@@ -1,0 +1,1680 @@
+internal/modules/cjs/loader.js:905
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:101:18)
+    at Object.<anonymous> (/home/shakilryan/bitcoinedge.io/server.js:4:14)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+(node:2992262) UnhandledPromiseRejectionWarning: ReferenceError: Request is not defined
+    at Object.<anonymous> (/home/shakilryan/nodevenv/bitcoinedge.io/14/lib/node_modules/next/dist/server/web/spec-extension/request.js:28:27)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at Module.mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/14/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (internal/modules/cjs/helpers.js:101:18)
+    at Object.<anonymous> (/home/shakilryan/nodevenv/bitcoinedge.io/14/lib/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:37:18)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2992262) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 2)
+(node:2992262) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:3003412) UnhandledPromiseRejectionWarning: ReferenceError: Request is not defined
+    at Object.<anonymous> (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/web/spec-extension/request.js:28:27)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at Module.mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (internal/modules/cjs/helpers.js:101:18)
+    at Object.<anonymous> (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:37:18)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3003412) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 2)
+(node:3003412) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:3003471) UnhandledPromiseRejectionWarning: ReferenceError: Request is not defined
+    at Object.<anonymous> (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/web/spec-extension/request.js:28:27)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at Module.mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (internal/modules/cjs/helpers.js:101:18)
+    at Object.<anonymous> (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:37:18)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3003471) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 2)
+(node:3003471) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151
+            throw new Error(`Could not find a production build in the '${opts.config.distDir}' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id`);
+                  ^
+
+Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id
+    at setupFsCheck (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151:19)
+    at async initialize (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/lib/router-server.js:62:23)
+    at async NextCustomServer.prepare (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js:242:28)
+
+Node.js v19.9.0
+/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151
+            throw new Error(`Could not find a production build in the '${opts.config.distDir}' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id`);
+                  ^
+
+Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id
+    at setupFsCheck (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151:19)
+    at async initialize (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/lib/router-server.js:62:23)
+    at async NextCustomServer.prepare (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js:242:28)
+
+Node.js v19.9.0
+/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151
+            throw new Error(`Could not find a production build in the '${opts.config.distDir}' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id`);
+                  ^
+
+Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id
+    at setupFsCheck (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151:19)
+    at async initialize (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/lib/router-server.js:62:23)
+    at async NextCustomServer.prepare (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js:242:28)
+
+Node.js v19.9.0
+/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151
+            throw new Error(`Could not find a production build in the '${opts.config.distDir}' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id`);
+                  ^
+
+Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id
+    at setupFsCheck (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151:19)
+    at async initialize (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/lib/router-server.js:62:23)
+    at async NextCustomServer.prepare (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js:242:28)
+
+Node.js v19.9.0
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ The requested resource "/_next/static/media/loading.2bb87e42.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ The requested resource isn't a valid image for /_next/static/media/shape.18aa98c1.png received text/html; charset=utf-8
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ The requested resource isn't a valid image for /_next/static/media/logo.810e271f.png received text/html; charset=utf-8
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ The requested resource isn't a valid image for /_next/static/media/logo.810e271f.png received text/html; charset=utf-8
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ The requested resource isn't a valid image for /_next/static/media/logo.95cc2c8d.png received text/html; charset=utf-8
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ The requested resource isn't a valid image for /_next/static/media/close.122f11d0.png received text/html; charset=utf-8
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ The requested resource isn't a valid image for /_next/static/media/tw.a569f50e.png received text/html; charset=utf-8
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ The requested resource isn't a valid image for /_next/static/media/tel.e7151f9d.png received text/html; charset=utf-8
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ The requested resource isn't a valid image for /_next/static/media/nav.a20ec47d.png received text/html; charset=utf-8
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ The requested resource isn't a valid image for /_next/static/media/de.1ad9e5d2.png received text/html; charset=utf-8
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ The requested resource isn't a valid image for /_next/static/media/logo.95cc2c8d.png received text/html; charset=utf-8
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ Error: Cannot find module '/home/shakilryan/bitcoinedge.io/.next/server/pages/_error.js'
+Require stack:
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js
+- /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js
+- /home/shakilryan/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/require.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next-server.js',
+    '/home/shakilryan/nodevenv/bitcoinedge.io/19/lib/node_modules/next/dist/server/next.js',
+    '/home/shakilryan/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+node:internal/modules/cjs/loader:1093
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.<anonymous> (/home/prohpmen/bitcoinedge.io/server.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v19.9.0
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/lib/router-utils/filesystem.js:151
+            throw new Error(`Could not find a production build in the '${opts.config.distDir}' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id`);
+                  ^
+
+Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id
+    at setupFsCheck (/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/lib/router-utils/filesystem.js:151:19)
+    at async initialize (/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/lib/router-server.js:62:23)
+    at async NextCustomServer.prepare (/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/next.js:242:28)
+
+Node.js v19.9.0
+/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/lib/router-utils/filesystem.js:151
+            throw new Error(`Could not find a production build in the '${opts.config.distDir}' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id`);
+                  ^
+
+Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id
+    at setupFsCheck (/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/lib/router-utils/filesystem.js:151:19)
+    at async initialize (/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/lib/router-server.js:62:23)
+    at async NextCustomServer.prepare (/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/next.js:242:28)
+
+Node.js v19.9.0
+/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/lib/router-utils/filesystem.js:151
+            throw new Error(`Could not find a production build in the '${opts.config.distDir}' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id`);
+                  ^
+
+Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id
+    at setupFsCheck (/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/lib/router-utils/filesystem.js:151:19)
+    at async initialize (/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/lib/router-server.js:62:23)
+    at async NextCustomServer.prepare (/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/next.js:242:28)
+
+Node.js v19.9.0
+ ⨯ Error: Cannot find module '/home/prohpmen/bitcoinedge.io/.next/server/app/_not-found/page.js'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/require.js
+- /home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/next-server.js
+- /home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/next.js
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/require.js:109:84)
+    at /home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/require.js',
+    '/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/next-server.js',
+    '/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/next.js',
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⨯ Error: Cannot find module '/home/prohpmen/bitcoinedge.io/.next/server/app/_not-found/page.js'
+Require stack:
+- /home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/require.js
+- /home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/next-server.js
+- /home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/next.js
+- /home/prohpmen/bitcoinedge.io/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1090:15)
+    at /home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:934:27)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at mod.require (/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/require.js:109:84)
+    at /home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/load-components.js:98:26)
+    at async NextNodeServer.findPageComponentsImpl (/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/require.js',
+    '/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/next-server.js',
+    '/home/prohpmen/bitcoinedge.io/node_modules/next/dist/server/next.js',
+    '/home/prohpmen/bitcoinedge.io/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ The requested resource "/_next/static/media/loading.2bb87e42.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ The requested resource "/_next/static/media/loading.2bb87e42.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+(node:1305204) ExperimentalWarning: buffer.File is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⚠ The requested resource "/_next/static/media/loading.2bb87e42.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
