@@ -47,7 +47,7 @@ const {openNav, setOpenNav} = context
                         </div>
                          </li>
 
-                         <li className="w-full  flex justify-center items-center md:hidden"> <Link  onClick={()=> setOpenNav('-999980%')}  href="#">
+                         <li className="w-full  flex justify-center items-center md:hidden"> <Link  onClick={()=> setOpenNav('-999980%')}  href="/whitepaper">
                         <div className="w-[160px] flex justify-center text-[16px] items-center h-[44px] rounded-lg text-[#111]  bg-[#DFBC74]">
                            <span>Whitepaper</span>
                         </div>
@@ -63,11 +63,11 @@ const {openNav, setOpenNav} = context
 
                    <div className="nav_end  flex justify-center gap-5 items-center">
                         <div className="icon_group_nav hidden gap-5 md:flex items-center justify-center">
-                        <button onClick={()=> window.location.href = '/buy'} className="border-[#DFBC74] border-[2px] w-[154px]  h-[44px] rounded-lg text-white text-[16px] ">Tokenomics</button>
+                        <button onClick={()=> window.location.href = '/tokenomics'} className="border-[#DFBC74] border-[2px] w-[154px]  h-[44px] rounded-lg text-white text-[16px] ">Tokenomics</button>
                
                         </div>
 
-                       <Link  onClick={()=> setOpenNav('-999980%')}  href="/staking">
+                       <Link  onClick={()=> setOpenNav('-999980%')}  href="/whitepaper">
                           <div className="w-[136px] flex justify-center text-[16px] md:text-lg items-center h-[44px] rounded-lg text-[#111] bg-[#DFBC74]">
                              <span className="text-[16px]">Whitepaper</span>
                           </div>

@@ -1,24 +1,57 @@
 'use client'
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Logo from './images/logo.jpg'
 import Footer from "./_components/Footer";
 import Nav from "./_components/Nav";
 import ReuseImage from "./_components/ReuseImage";
 
-import ic1 from './images/ic1.jpg'
-import ic2 from './images/ic2.jpg'
-import ic3 from './images/ic3.jpg'
-
-import Gold from './images/gold.png'
-import BlackHole from './images/black_hole.png'
-import Link from 'next/link';
-
 
 export default function Home() {
 
+ 
+  const targetDate:any = new Date('2035-03-02T10:09:00-08:00'); // Target date and time in PST
 
+  // Function to calculate the remaining time including months
+  const calculateTimeLeft = () => {
+    const now:any = new Date();
+    const difference = targetDate - now;
+    
+    // If the time has passed, return 0 for all units
+    if (difference <= 0) {
+      return {
+        months: 0,
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+      };
+    }
 
+    const months = targetDate.getMonth() - now.getMonth() + (12 * (targetDate.getFullYear() - now.getFullYear()));
+    const seconds = Math.floor((difference / 1000) % 60);
+    const minutes = Math.floor((difference / 1000 / 60) % 60);
+    const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24)) % 30;
 
+    return {
+      months,
+      days,
+      hours,
+      minutes,
+      seconds,
+    };
+  };
+
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    // Clear interval on component unmount
+    return () => clearInterval(interval);
+  }, []);
 
 
   return (
@@ -33,7 +66,8 @@ export default function Home() {
         
            <div className="md:px-10 z-20">
               <h4 className="text-2xl md:leading-[70px] md:text-[56px] font-black text-left  md:my-0 md:text-center">
-             <span className="text-[#DFBC74]">ONE EVERY DECADE OED</span> THE ULTIMATE DIGITAL ASSET OF THE FUTURE
+              ONE EVERY DECADE
+             <span className="text-[#DFBC74] font-black"> OED</span> THE ULTIMATE DIGITAL ASSET OF THE FUTURE
               </h4>
               <h4 className="md:text-center font-black mt-2 text-lg md:text-3xl">
               THE RAREST CRYPTOCURRENCY EVER CREATED
@@ -50,7 +84,7 @@ export default function Home() {
 
               <div className="my-4  flex justify-center gap-5 items-center">
                         <div className="i gap-5 md:flex items-center justify-center">
-                        <button onClick={()=> window.location.href = '/buy'} className="border-[#DFBC74] border-[2px] w-[154px]  h-[44px] rounded-lg text-white text-[16px] ">Tokenomics</button>
+                        <button onClick={()=> window.location.href = '/tokenomics'} className="border-[#DFBC74] border-[2px] w-[154px]  h-[44px] rounded-lg text-white text-[16px] ">Tokenomics</button>
                
                         </div>
 
@@ -58,7 +92,7 @@ export default function Home() {
                          
                       
                         <div className=" gap-5 md:flex items-center  justify-center">
-                        <button onClick={()=> window.location.href = '/buy'} className="bg-[#DFBC74]  w-[154px]  h-[44px] rounded-lg text-black text-[16px] ">BUY OED</button>
+                        <button onClick={()=> window.location.href = '/'} className="bg-[#DFBC74]  w-[154px]  h-[44px] rounded-lg text-black text-[16px] ">BUY OED</button>
                
                         </div>
 
@@ -144,7 +178,9 @@ export default function Home() {
                        <div className="flex justify-center items-center flex-col">
                            <span className="text-[12px] md:text-lg">Months</span>
                            <div className="bg-[#212525] w-[60px] h-[60px] flex justify-center items-center rounded-xl">
-                              <h5 className="text-xl md:text-4xl text-center font-black">11</h5>
+                              <h5 className="text-xl md:text-4xl text-center font-black">
+                                {timeLeft.months}
+                              </h5>
                            </div>
                        </div>
 
@@ -152,7 +188,9 @@ export default function Home() {
                        <div className="flex justify-center items-center flex-col">
                            <span className="text-[12px] md:text-lg">Days</span>
                            <div className="bg-[#212525] w-[60px] h-[60px] flex justify-center items-center rounded-xl">
-                              <h5 className="text-xl md:text-4xl text-center font-black">29</h5>
+                              <h5 className="text-xl md:text-4xl text-center font-black">
+                                {timeLeft.days}
+                              </h5>
                            </div>
                        </div>
 
@@ -161,7 +199,9 @@ export default function Home() {
                        <div className="flex justify-center items-center flex-col">
                            <span className="text-[12px] md:text-lg">Hours</span>
                            <div className="bg-[#212525] w-[60px] h-[60px] flex justify-center items-center rounded-xl">
-                              <h5 className="text-xl md:text-4xl text-center font-black">23</h5>
+                              <h5 className="text-xl md:text-4xl text-center font-black">
+                                {timeLeft.hours}
+                              </h5>
                            </div>
                        </div>
 
@@ -170,7 +210,9 @@ export default function Home() {
                        <div className="flex justify-center items-center flex-col">
                            <span className="text-[12px] md:text-lg">Minutes</span>
                            <div className="bg-[#212525] w-[60px] h-[60px] flex justify-center items-center rounded-xl">
-                              <h5 className="text-xl md:text-4xl text-center font-black">54</h5>
+                              <h5 className="text-xl md:text-4xl text-center font-black">
+                                {timeLeft.minutes}
+                              </h5>
                            </div>
                        </div>
 
@@ -178,7 +220,9 @@ export default function Home() {
                        <div className="flex justify-center items-center flex-col">
                            <span className="text-[12px] md:text-lg">Seconds</span>
                            <div className="bg-[#212525] w-[60px] h-[60px] flex justify-center items-center rounded-xl">
-                              <h5 className="text-xl md:text-4xl text-center font-black">14</h5>
+                              <h5 className="text-xl md:text-4xl text-center font-black">
+                                {timeLeft.seconds}
+                              </h5>
                            </div>
                        </div>
 
