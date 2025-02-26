@@ -31,6 +31,16 @@
 
 
 
+#search::placeholder {
+  color: #888; /* Placeholder text color */
+  padding-left: 35px;  
+  background-image: url('./search.png');
+  background-repeat: no-repeat;
+  background-position: 5px center;
+}
+
+
+
 body {
   color:#fff;
   background: var(--background);

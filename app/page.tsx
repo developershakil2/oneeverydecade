@@ -6,45 +6,66 @@ import Nav from "./_components/Nav";
 import ReuseImage from "./_components/ReuseImage";
 
 
+
+
+
+const targetDate: any = new Date('2035-03-02T10:09:00-08:00'); // Target date and time in PST
+
+// Function to calculate the remaining time including months
+const calculateTimeLeft = () => {
+  const now: any = new Date();
+  const difference = targetDate - now;
+
+  // If the time has passed, return 0 for all units
+  if (difference <= 0) {
+    return {
+      months: 0,
+      days: 0,
+      hours: 0,
+      minutes: 0,
+      seconds: 0,
+    };
+  }
+
+  // Calculate year, month, day, hour, minute, and second difference
+  const years = targetDate.getFullYear() - now.getFullYear();
+  const months = targetDate.getMonth() - now.getMonth() + (years * 12); // Months difference including years
+  const tempDate:any = new Date(now);
+  tempDate.setFullYear(targetDate.getFullYear(), targetDate.getMonth(), targetDate.getDate());
+
+ // Calculate the remaining days in the current month
+ const daysInCurrentMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate(); // Total days in the current month
+ const currentDay = now.getDate(); // Current day of the month
+ const daysInCurrentMonthLeft = daysInCurrentMonth - currentDay; // Days remaining in this month
+
+ // Make sure daysLeft is non-negative
+ const days = Math.max(daysInCurrentMonthLeft, 0);
+
+  
+  const seconds = Math.floor((difference / 1000) % 60);
+  const minutes = Math.floor((difference / 1000 / 60) % 60);
+  const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+
+  return {
+    months,
+    days,
+    hours,
+    minutes,
+    seconds,
+  };
+};
+
+
+
+
+
 export default function Home() {
 
- 
-  const targetDate:any = new Date('2035-03-02T10:09:00-08:00'); // Target date and time in PST
-
-  // Function to calculate the remaining time including months
-  const calculateTimeLeft = () => {
-    const now:any = new Date();
-    const difference = targetDate - now;
-    
-    // If the time has passed, return 0 for all units
-    if (difference <= 0) {
-      return {
-        months: 0,
-        days: 0,
-        hours: 0,
-        minutes: 0,
-        seconds: 0,
-      };
-    }
-
-    const months = targetDate.getMonth() - now.getMonth() + (12 * (targetDate.getFullYear() - now.getFullYear()));
-    const seconds = Math.floor((difference / 1000) % 60);
-    const minutes = Math.floor((difference / 1000 / 60) % 60);
-    const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
-    const days = Math.floor(difference / (1000 * 60 * 60 * 24)) % 30;
-
-    return {
-      months,
-      days,
-      hours,
-      minutes,
-      seconds,
-    };
-  };
-
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [isClient, setIsClient] = useState(false);  // State to check if we're on the client
 
   useEffect(() => {
+    setIsClient(true); // Set to true once the component is rendered on the client
     const interval = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
@@ -52,6 +73,11 @@ export default function Home() {
     // Clear interval on component unmount
     return () => clearInterval(interval);
   }, []);
+
+  // Only render the countdown on the client side to avoid SSR mismatch
+  if (!isClient) {
+    return null;
+  }
 
 
   return (
