@@ -1,26 +1,75 @@
 'use client'
 
+import React, {useContext, useState, useEffect} from 'react'
 import NFTFooter from "@/app/_components/NFTFooter";
 import NftNav from "@/app/_components/NftNavBar";
-
+import { API } from '@/app/utilities';
+import ReuseImage from '@/app/_components/ReuseImage';
+import Loading from '@/app/images/loading.gif'
+import { useAccount } from 'wagmi';
+import { openModal } from '@/app/WalletProvider';
 
 const NftMarket = ()=>{
 
+    const context = useContext(API)
+    const [nft ,setNft] = useState<any>([])
+    if(context == undefined){
+      throw new Error("context error");
+      
+    }
+    const {getallnfts, resMessage, isLoad, buyNFT, setResMessage} = context;
+    const {address} = useAccount()
+   
+    useEffect(()=>{
+         async function datad(){
+            const data = await getallnfts()
+           setNft(data)
+         }
+
+         datad()
+    }, [])
 
 
-
+    console.log(nft, 'nfts')
 
 
     return(
         <>
+
+  
+  
+{
+        isLoad == true?   <div className="w-full z-50 h-screen bg-[#000000b2] flex items-center fixed top-0 left-0 justify-center">
+        <ReuseImage height={250} width={250} src={Loading} alt="loading" cl="w-[250px] h-[250px] object-cover rounded-full" />
+    </div>:''
+    }
+      {
+        resMessage != ''?   <div className="w-full z-[200] h-screen bg-[#000000b2] flex items-center fixed top-0 left-0 justify-center">
+            <div className="w-[360px] bg-white h-auto p-10 rounded-xl flex justify-center items-center">
+                   <div className="w-full flex justify-center items-center flex-col">
+                     <h2 className="text-black text-xl font-black text-center">
+                        {resMessage}
+                     </h2>
+                     <button onClick={()=> setResMessage('')} className="bg-black mt-4 px-4 rounded-xl py-2 text-white font-black" data-translate data-original-text="okay">Okay</button>
+
+                   </div>
+            </div>
+    </div>:''
+    }
+
+
+
+
         <NftNav/>
         <div className="relative w-full h-auto">
-        <img className="fixed -top-[70px] -left-[40px] h-[300px] w-[300px] object-cover" src="/shadow.png" alt=""/>
-        <img className="fixed top-[100px] -right-[10px] h-[300px] w-[300px] object-cover" src="/shadow.png" alt=""/>
+        <img className="fixed -top-[70px] -left-[40px] z-10 h-[300px] w-[300px] object-cover" src="/shadow.png" alt=""/>
+        <img className="fixed top-[100px] -right-[10px] z-10 h-[300px] w-[300px] object-cover" src="/shadow.png" alt=""/>
       
       
         <div className="px-3 mt-[120px]  md:pl-[75px] w-full flex justify-between items-center  md:items-start">
              <div className="w-full  px-2 md:w-[75%]">
+             
+             
                  <div className="w-full flex justify-start py-10 md:py-4 flex-col-reverse items-center md:justify-between md:items-center md:flex-row rounded-xl p-4" style={{backgroundColor:'rgba(65, 93, 89, 0.17)'}}>
                      <div className="here_wrapper">
                          <h2 className="text-2xl leading-[30px] md:leading-[60px] md:text-[50px] font-black ">
@@ -29,40 +78,58 @@ const NftMarket = ()=>{
                          <h2 className="text-2xl mb-5 leading-[30px] md:leading-[60px] md:text-[50px] font-black ">
                          Own The Rare NFT
                          </h2>
-                         <a className="mt-[10px] px-8 py-3 rounded-xl bg-[#dfbc74] text-black text-center " href="/">
-                          My NFTs
-                         </a>
+                          {
+                           address ?
+                           <a className="mt-[10px] px-8 py-3 rounded-xl bg-[#dfbc74] text-black text-center " href="/wallet">
+                           My NFTs
+                          </a>:
+                          <button onClick={()=> openModal()} className="text-black bg-[#dfbc74] rounded-xl px-5 py-3">Connect Wallet</button>
+                          }
                      </div>
 
                      <img className="object-fit w-[200px] h-[200px] md:w-[260px] md:h-[260px] rounded-xl  " src="/oed.png" alt="oed" />
                  </div>
 
-                 <div className="mt-10 w-full  flex justify-between items-center flex-wrap md:flex-nowrap">
+
+
+                 <div className="mt-10 w-full z-50  flex justify-between items-center flex-wrap md:flex-nowrap">
                   
                   
-                    <div className="w-full md:w-[330px] my-3 md:my-0 rounded-xl pb-6"  style={{backgroundColor:'rgba(65, 93, 89, 0.17)'}}>
-                          <img className="w-full h-[190px]" src="/nft1.png" alt="nft" />
-                         <div className="w-full px-3">
-                         <h2 className="py-3 text-2xl font-black">OED FRST</h2>
-                         <div className=" w-full flex justify-between">
-                            <h5>Price</h5>
-                            <h4 className="font-black">0.5 ETH</h4>
-                         </div>
+                 {
+                  nft ? nft.map((el:any)=>(
+                     <>
+                       {
+                        el.isListed == true ? 
+                        <div className="w-full z-50 md:w-[330px] my-3 md:my-0 rounded-xl pb-6"  style={{backgroundColor:'rgba(65, 93, 89, 0.17)'}}>
+                        <img className="w-full h-[190px]" src="/nft1.png" alt="nft" />
+                       <div className="w-full px-3">
+                       <h2 className="py-3 text-2xl font-black">{el.name}</h2>
+                       <div className=" w-full flex justify-between">
+                          <h5>Price</h5>
+                          <h4 className="font-black">{el.price} ETH</h4>
+                       </div>
 
-                         <div className=" w-full my-3 flex justify-between">
-                            <h5>Listed</h5>
-                            <h4 className="">02-03-2025</h4>
-                         </div>
+                       <div className=" w-full my-3 flex justify-between">
+                          <h5>Listed</h5>
+                          <h4 className="">02-03-2025</h4>
+                       </div>
 
 
-                         <div className="w-full mt-4 flex justify-between">
-                            <button className="rounded-lg bg-[#dfbc74] text-black py-2 w-[120px]">Buy Now</button>
-                            <a className="rounded-lg bg-[#dfbc74] text-center text-black py-2 w-[120px]" href="/">
-                                Make Offer
-                            </a>
-                         </div>
-                         </div>
-                    </div>
+                       <div className="w-full mt-4 flex justify-between">
+                          {
+                           address ? <button onClick={async()=> buyNFT(el.tokenId, el.price)} className="rounded-lg z-50 bg-[#dfbc74] text-black py-2 w-[120px]">Buy Now</button>:
+                           <button onClick={openModal} className="rounded-lg z-50 bg-[#dfbc74] text-black py-2 w-[120px] text-xs">Connect Wallet</button>
+                          }
+                          <a className="rounded-lg z-50 bg-[#dfbc74] text-center text-black py-2 w-[120px]" href={`/nft-details/${el.tokenId}`}>
+                             View NFT
+                          </a>
+                       </div>
+                       </div>
+                  </div>:<h2 className="text-xl font-black text-white">'No NFT available to Buy Currently'</h2>
+                       }
+                     </>
+                  )):<h2 className="text-xl font-black text-white">'No NFT available to Buy Currently'</h2>
+                 }
 
 
                     <div className="w-full relative md:w-[330px] my-3 md:my-0 rounded-xl pb-6"  style={{backgroundColor:'rgba(65, 93, 89, 0.17)'}}>
@@ -90,7 +157,7 @@ const NftMarket = ()=>{
                          <div className="w-full mt-4 flex justify-between">
                             <button className="rounded-lg bg-[#dfbc74] text-black py-2 w-[120px]">Buy Now</button>
                             <a className="rounded-lg bg-[#dfbc74] text-center text-black py-2 w-[120px]" href="/">
-                                Make Offer
+                                View NFT
                             </a>
                          </div>
                          </div>
@@ -122,7 +189,7 @@ const NftMarket = ()=>{
                          <div className="w-full mt-4 flex justify-between">
                             <button className="rounded-lg bg-[#dfbc74] text-black py-2 w-[120px]">Buy Now</button>
                             <a className="rounded-lg bg-[#dfbc74] text-center text-black py-2 w-[120px]" href="/">
-                                Make Offer
+                                View NFT
                             </a>
                          </div>
                          </div>
@@ -159,7 +226,7 @@ const NftMarket = ()=>{
                        <div className="w-full mt-4 flex justify-between">
                           <button className="rounded-lg bg-[#dfbc74] text-black py-2 w-[120px]">Buy Now</button>
                           <a className="rounded-lg bg-[#dfbc74] text-center text-black py-2 w-[120px]" href="/">
-                              Make Offer
+                              View NFT
                           </a>
                        </div>
                        </div>
@@ -191,7 +258,7 @@ const NftMarket = ()=>{
                        <div className="w-full mt-4 flex justify-between">
                           <button className="rounded-lg bg-[#dfbc74] text-black py-2 w-[120px]">Buy Now</button>
                           <a className="rounded-lg bg-[#dfbc74] text-center text-black py-2 w-[120px]" href="/">
-                              Make Offer
+                              View NFT
                           </a>
                        </div>
                        </div>
@@ -223,7 +290,7 @@ const NftMarket = ()=>{
                        <div className="w-full mt-4 flex justify-between">
                           <button className="rounded-lg bg-[#dfbc74] text-black py-2 w-[120px]">Buy Now</button>
                           <a className="rounded-lg bg-[#dfbc74] text-center text-black py-2 w-[120px]" href="/">
-                              Make Offer
+                              View NFT
                           </a>
                        </div>
                        </div>
@@ -250,13 +317,15 @@ const NftMarket = ()=>{
 
              <div className="hidden md:w-[25%] px-2 md:flex justify-start items-start flex-col">
                    <div className="w-full  flex justify-center items-center">
-                   <div className="w-full md:w-[330px] my-3 md:my-0 rounded-xl pb-6"  style={{backgroundColor:'rgba(65, 93, 89, 0.17)'}}>
-                          <img className="w-full h-[190px]" src="/nft1.png" alt="nft" />
+                        {
+                          nft && nft[0]?.isListed == true ? 
+                           <div className="w-full md:w-[330px] my-3 md:my-0 rounded-xl pb-6"  style={{backgroundColor:'rgba(65, 93, 89, 0.17)'}}>
+                          <img className="w-full h-[190px]" src={nft[0].image} alt="nft" />
                          <div className="w-full px-3">
-                         <h2 className="py-3 text-2xl font-black">OED FRST</h2>
+                         <h2 className="py-3 text-2xl font-black">{nft[0].name}</h2>
                          <div className=" w-full flex justify-between">
                             <h5>Price</h5>
-                            <h4 className="font-black">0.5 ETH</h4>
+                            <h4 className="font-black">{nft[0].price} ETH</h4>
                          </div>
 
                          <div className=" w-full my-3 flex justify-between">
@@ -266,13 +335,18 @@ const NftMarket = ()=>{
 
 
                          <div className="w-full mt-4 flex justify-between">
-                            <button className="rounded-lg bg-[#dfbc74] text-black py-2 w-[120px]">Buy Now</button>
-                            <a className="rounded-lg bg-[#dfbc74] text-center text-black py-2 w-[120px]" href="/">
-                                Make Offer
+                         {
+                           address ? <button onClick={async()=> buyNFT(nft[0].tokenId, nft[0].price)} className="rounded-lg z-50 bg-[#dfbc74] text-black py-2 w-[120px]">Buy Now</button>:
+                           <button onClick={openModal} className="rounded-lg z-50 bg-[#dfbc74] text-black py-2 w-[120px] text-xs">Connect Wallet</button>
+                          }
+                           
+                            <a className="rounded-lg z-50 bg-[#dfbc74] text-center text-black py-2 w-[120px]" href={`/nft-details/${nft[0].tokenId}`}>
+                               View NFT
                             </a>
                          </div>
                          </div>
-                    </div>
+                    </div>:<h2 className="text-center font-black">"No NFT Available to buy currently "</h2>
+                        }
                    </div>
 
 

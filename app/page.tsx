@@ -63,7 +63,8 @@ export default function Home() {
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
   const [isClient, setIsClient] = useState(false);  // State to check if we're on the client
-
+  const [isCopy, setIsCopy] = useState<any>(false)
+   
   useEffect(() => {
     setIsClient(true); // Set to true once the component is rendered on the client
     const interval = setInterval(() => {
@@ -110,7 +111,7 @@ export default function Home() {
 
               <div className="my-4  flex justify-center gap-5 items-center">
                         <div className="i gap-5 md:flex items-center justify-center">
-                        <button onClick={()=> window.location.href = '/tokenomics'} className="border-[#DFBC74] border-[2px] w-[154px]  h-[44px] rounded-lg text-white text-[16px] ">Tokenomics</button>
+                        <button onClick={()=> window.location.href = '/nft-market'} className="border-[#DFBC74] border-[2px] w-[154px]  h-[44px] rounded-lg text-white text-[16px] ">OED NFT MARKET</button>
                
                         </div>
 
@@ -118,7 +119,7 @@ export default function Home() {
                          
                       
                         <div className=" gap-5 md:flex items-center  justify-center">
-                        <button onClick={()=> window.location.href = '/'} className="bg-[#DFBC74]  w-[154px]  h-[44px] rounded-lg text-black text-[16px] ">BUY OED</button>
+                        <button onClick={()=> window.location.href = 'https://app.uniswap.org/swap?outputCurrency=0x9928d72c5a45f37a7e46a447f90cb803f21a96b7&chain=base'} className="bg-[#DFBC74]  w-[154px]  h-[44px] rounded-lg text-black text-[16px] ">BUY OED</button>
                
                         </div>
 
@@ -138,7 +139,9 @@ export default function Home() {
                     <ReuseImage height={22} width={22} cl="w-[22px] h-[22px] mr-1 rounded-full" src={Logo} alt="logo"/>
                    
                         Contract Address</h2>
-                    <button className="py-2 px-5 bg-[#dfbc74] text-black font-black rounded-xl text-center">Copy</button>
+                    <button onClick={()=> [window.navigator.clipboard.writeText('0x5bf28FC94f1Ad269dbAC0aA2A205c5C0A5eEfe0C'), setIsCopy(true), setTimeout(()=>{setIsCopy(false)}, 3000)]} className="py-2 px-5 bg-[#dfbc74] text-black font-black rounded-xl text-center">
+                        {isCopy == true ? "Copied":'Copy'}
+                    </button>
                 </div>
 
                 <div className="mt-5 w-full md:w-[60%] mx-auto">
@@ -295,7 +298,7 @@ export default function Home() {
 
             <div className="hero_left w-full md:w-[50%] py-3 md:py-10 flex justify-center md:justify-end items-center md:items-start flex-col">
                 <div className="hero_title_wrapper mt-16 md:mt-0 w-full md:w-[full]">
-                <h1 className="  leading-[105%] font-black text-3xl text-left md:text-left md:text-[50px]">
+                <h1 className="  leading-[105%] font-black text-3xl md:-mt-20 text-left md:text-left md:text-[50px]">
                 HOW OED CREATES GENERATIONAL WEALTH
                </h1>
 
@@ -334,7 +337,7 @@ export default function Home() {
 
 
 
-        <div className="w-full bg-[#3B4040] py-10 md:px-10 my-5 md:my-[100px] px-2 mx-auto flex  justify-center items-center md:justify-between flex-col-reverse md:flex-row">
+        <div className="w-full container  bg-[#3B4040] py-10 md:px-10 my-5 md:my-[100px] px-2 mx-auto flex  justify-center items-center md:justify-between flex-col-reverse md:flex-row">
         
         <div className="hero_left w-full md:w-[50%] py-3 md:py-10 flex justify-center md:justify-start items-center md:items-start flex-col">
                 <div className="hero_title_wrapper mt-16 md:mt-0 w-full md:w-[full]">

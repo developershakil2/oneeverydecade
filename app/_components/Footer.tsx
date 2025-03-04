@@ -21,12 +21,17 @@ const Footer = ()=>{
               <div >
               <div className="icon_group_nav w-full  gap-5 md:mt-0 flex items-center justify-center">
                              <a href="https://t.me/" className="rounded-full ">
-                             <ReuseImage height={20} width={20} src={Tel} cl="w-[18px] h-[18px] rounded-full" alt="tw"/>
+                             <ReuseImage height={38} width={38} src={Tel} cl="w-[38px] h-[38px] rounded-full" alt="tw"/>
 
                              </a>
 
                              <a href="https://x.com" className="rounded-full ">
-                             <ReuseImage height={20} width={20} src={Tw} cl="w-[18px] h-[18px] rounded-full" alt="tw"/>
+                             <ReuseImage height={38} width={38} src={Tw} cl="w-[38px] h-[38px] rounded-full" alt="tw"/>
+                             </a>
+
+
+                             <a href="/token.pdf" target="_blank"  className="rounded-full ">
+                             <ReuseImage height={38} width={38} src={'/sec.png'} cl="w-[38px] h-[38px] rounded-full" alt="tw"/>
                              </a>
 
                              

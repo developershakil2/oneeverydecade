@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import ContextComponent from "@/app/utilities";
-
+import {WalletProvider, openModal} from './WalletProvider'
 // Define fonts
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -30,10 +30,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-      
+          
+          <WalletProvider cookies={''}>
           <ContextComponent>
             {children}
           </ContextComponent>
+          </WalletProvider>
       
       </body>
     </html>

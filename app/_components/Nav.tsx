@@ -63,13 +63,13 @@ const {openNav, setOpenNav} = context
 
                    <div className="nav_end  flex justify-center gap-5 items-center">
                         <div className="icon_group_nav hidden gap-5 md:flex items-center justify-center">
-                        <button onClick={()=> window.location.href = '/tokenomics'} className="border-[#DFBC74] border-[2px] w-[154px]  h-[44px] rounded-lg text-white text-[16px] ">Tokenomics</button>
+                        <button onClick={()=> window.location.href = '/whitepaper'} className="border-[#DFBC74] border-[2px] w-[154px]  h-[44px] rounded-lg text-white text-[16px] ">Whitepaper</button>
                
                         </div>
 
-                       <Link  onClick={()=> setOpenNav('-999980%')}  href="/whitepaper">
+                       <Link  onClick={()=> setOpenNav('-999980%')}  href="/tokenomics">
                           <div className="w-[136px] flex justify-center text-[16px] md:text-lg items-center h-[44px] rounded-lg text-[#111] bg-[#DFBC74]">
-                             <span className="text-[16px]">Whitepaper</span>
+                             <span className="text-[16px]">Tokenomics</span>
                           </div>
                           </Link>
                          
