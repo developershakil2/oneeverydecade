@@ -13,7 +13,7 @@ import Loading from '@/app/images/loading.gif'
 const Wallet = ()=>{
 
        const {address} = useAccount();
-       const contractAddress = '0x6847fC83425776aABEF6f1D5435EBCC8ddc67c5f'
+       const contractAddress = '0x1bB1d4Ad38Fad65ffFDFA31df5983B3c5c74942B'
        const provider = new ethers.providers.JsonRpcProvider('https://mainnet.base.org');
        const contract = new ethers.Contract(contractAddress , ABI, provider)
        const context = useContext(API)
@@ -60,6 +60,27 @@ const Wallet = ()=>{
         DataFunc()
      }, [address])
 
+
+     const [mod, setMod] = useState<Boolean>(false)
+     const [nftPrice, setNftPrice] = useState<any>(null)
+     const [nftName, setNftName] = useState<any>('')
+     const [nftDes, setNftDes] = useState<any>("")
+     const [nftImg , setNftImg] = useState<any>("")
+    const [nftId, setNftId] = useState<any>(null)
+
+     const resellModal = async(id:any)=>{
+        setMod(true)
+        setNftId(id)
+     }
+
+     const resellFunc = async()=>{ 
+       setTimeout(()=>{
+        setMod(false)
+       }, 1000)
+       await resell(nftId, nftPrice, nftName, nftDes, nftImg)
+     }
+
+
     
     return(
         <>
@@ -82,6 +103,45 @@ const Wallet = ()=>{
             </div>
     </div>:''
     }
+
+
+
+{
+        mod == true?   <div className="w-full z-[190] h-screen bg-[#000000b2] flex items-center fixed top-0 left-0 justify-center">
+            <div style={{backgroundColor:'rgba(65, 93, 89, 0.77)'}} className="w-[360px]   h-auto px-6 py-3 rounded-xl flex justify-center items-center">
+                   <div className="w-full flex justify-center items-center flex-col">
+                     <div className="w-full my-1">
+                 
+                      <div className="w-full flex justify-between items-center py-2">
+                           <h2>Add Nft Details</h2>
+                           <button 
+                            onClick={()=> setMod(false)}
+                           ><img className="w-[20px] h-[20px] rounded-full" src="./close.png" alt="icon"/></button>
+                      </div>
+                      <span className="ml-2 text-white text-xs">Price</span>
+                       <input value={nftPrice} onChange={(e)=> setNftPrice(e.target.value)} className="w-full py-2 rounded-xl text-white bg-transparent border-[#fff] border-[1px] px-4 outline-none" type="number" placeholder="Ex: 8.5 ETH" />
+                     </div>
+                     <div className="w-full my-1">
+                      <span className="ml-2 text-white text-xs">NFT Name</span>
+                       <input value={nftName} onChange={(e)=> setNftName(e.target.value)} className="w-full py-2 rounded-xl text-white bg-transparent border-[#fff] border-[1px] px-4 outline-none" type="text" placeholder="Ex: OED FRST" />
+                     </div>
+                     <div className="w-full my-1">
+                      <span className="ml-2 text-white text-xs">NFT Description</span>
+                       <input value={nftDes} onChange={(e)=> setNftDes(e.target.value)} className="w-full py-2 rounded-xl text-white bg-transparent border-[#fff] border-[1px] px-4 outline-none" type="text" placeholder="description...." />
+                     </div>
+                     <div className="w-full my-1">
+                      <span className="ml-2 text-white text-xs">NFT Image</span>
+                       <input value={nftImg} onChange={(e)=> setNftImg(e.target.value)} className="w-full py-2 rounded-xl text-white bg-transparent border-[#fff] border-[1px] px-4 outline-none" type="text" placeholder="ipfs image url" />
+                     </div>
+
+                     <button onClick={resellFunc} className="bg-black mt-4 px-8 w-full rounded-xl py-2 text-white font-black">Resell</button>
+
+                   </div>
+            </div>
+    </div>:''
+    }
+
+
 
 
 
@@ -112,11 +172,11 @@ const Wallet = ()=>{
            
                   </div>
 
-                  <div className="mt-10 w-full flex flex-wrap justify-between items-center">
+                  <div className="mt-10 w-full flex flex-wrap gap-3 justify-between items-center">
                   {
                     nft ? nft.map((el:any)=>(
                     
-                            <div className="w-full md:w-[330px] my-3 md:my-0 rounded-xl pb-6"  style={{backgroundColor:'rgba(65, 93, 89, 0.17)'}}>
+                            <div className="w-full md:w-[32%] my-3 md:my-0 rounded-xl pb-6"  style={{backgroundColor:'rgba(65, 93, 89, 0.17)'}}>
                             <img className="w-full h-[190px]" src={el.image} alt="nft" />
                            <div className="w-full px-3">
                            <h2 className="py-3 text-2xl font-black">{el.name}</h2>
@@ -131,7 +191,7 @@ const Wallet = ()=>{
                                 el.isListed == true?
                                 <button disabled className="rounded-lg  bg-[gray] text-black py-2 w-[90%] mx-auto">Listed For Sell</button>
                              :
-                             <button onClick={async()=> resell(el.tokenId, ethers.utils.parseUnits(el.price, 'ether'), el.name, el.description, el.image)} className="rounded-lg bg-[#dfbc74] text-black py-2 w-[90%] mx-auto">Resell</button>
+                             <button onClick={()=>  resellModal(el.tokenId)} className="rounded-lg bg-[#dfbc74] text-black py-2 w-[90%] mx-auto">Resell</button>
                              
                             }
                            </div>

@@ -36,9 +36,7 @@ const WhitePaper = ()=>{
               • 2% Buy & Sell Tax Distribution to sustain long-term growth.
               </h6>
 
-              <h6 className="my-3">
-              • 2% Automated BTEG Buy & Burn, ensuring a deflationary effect on Bitcoin Edge BTEG.
-              </h6>
+            
               </div>
 
 
@@ -46,7 +44,7 @@ const WhitePaper = ()=>{
               <div className="w-full md:w-[55%] mt-10  mx-auto">
               <h5 className="my-5 text-[#dfbc74] text-xl md:text-3xl font-black">The  <span className="text-[#dfbc74]">OED</span> Mission</h5>
               <h6>
-              <span className="text-[#dfbc74]">OED's</span> mission is to create the ultimate scarce financial asset thatoutlives governments, fiat currencies, and entire economies.
+              <span className="text-[#dfbc74]">OED's</span> mission is to create the ultimate scarce financial asset that outlives governments, fiat currencies, and entire economies.
               </h6>
               </div>
 
@@ -79,7 +77,6 @@ const WhitePaper = ()=>{
               Only 21  <span className="text-[#dfbc74]">OED</span> will ever exist. Are you rich enough to own just 1?
               </h6>
 
-              <h5 className="my-3 font-black">MINTING SCHEDULE & FINAL SUPPLY</h5>
               <h6 className="my-2 font-black">FIXED MINTING EVERY 10 YEARS</h6>
               <h6>After the final mint in 2135, no more  <span className="text-[#dfbc74]">OED</span> tokens will ever be created, ensuring ultimate scarcity.</h6>
               </div>

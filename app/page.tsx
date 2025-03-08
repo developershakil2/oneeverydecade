@@ -9,14 +9,13 @@ import ReuseImage from "./_components/ReuseImage";
 
 
 
-const targetDate: any = new Date('2035-03-02T10:09:00-08:00'); // Target date and time in PST
+const targetDate = new Date(2035, 2, 2, 10, 9, 0); // Month: 2 means March
 
-// Function to calculate the remaining time including months
 const calculateTimeLeft = () => {
-  const now: any = new Date();
-  const difference = targetDate - now;
-
-  // If the time has passed, return 0 for all units
+  const now = new Date();
+  const difference = targetDate.getTime() - now.getTime();
+  
+  // If the time has passed, return 0 for all units.
   if (difference <= 0) {
     return {
       months: 0,
@@ -27,24 +26,22 @@ const calculateTimeLeft = () => {
     };
   }
 
-  // Calculate year, month, day, hour, minute, and second difference
-  const years = targetDate.getFullYear() - now.getFullYear();
-  const months = targetDate.getMonth() - now.getMonth() + (years * 12); // Months difference including years
-  const tempDate:any = new Date(now);
-  tempDate.setFullYear(targetDate.getFullYear(), targetDate.getMonth(), targetDate.getDate());
-
- // Calculate the remaining days in the current month
- const daysInCurrentMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate(); // Total days in the current month
- const currentDay = now.getDate(); // Current day of the month
- const daysInCurrentMonthLeft = daysInCurrentMonth - currentDay; // Days remaining in this month
-
- // Make sure daysLeft is non-negative
- const days = Math.max(daysInCurrentMonthLeft, 0);
-
+  // Calculate the total month difference based on year and month.
+  let months = (targetDate.getFullYear() - now.getFullYear()) * 12 + (targetDate.getMonth() - now.getMonth());
   
-  const seconds = Math.floor((difference / 1000) % 60);
-  const minutes = Math.floor((difference / 1000 / 60) % 60);
+  // Calculate day difference. If negative, adjust months and recalc days.
+  let days = targetDate.getDate() - now.getDate();
+  if (days < 0) {
+    months -= 1;
+    // Get the number of days in the month prior to the target date's month
+    const daysInPrevMonth = new Date(targetDate.getFullYear(), targetDate.getMonth(), 0).getDate();
+    days = daysInPrevMonth + days;
+  }
+  
+  // Calculate hours, minutes, seconds from the remaining difference
   const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((difference / (1000 * 60)) % 60);
+  const seconds = Math.floor((difference / 1000) % 60);
 
   return {
     months,
@@ -83,7 +80,7 @@ export default function Home() {
 
   return (
        <div className="home_page">
-        <Nav isWallet={false}/>
+        <Nav isWallet={true}/>
         
         <div className="container relative mt-10 md:mt-[100px] px-2 md:px-0 mx-auto flex  justify-center items-center">
            
@@ -93,8 +90,8 @@ export default function Home() {
         
            <div className="md:px-10 z-20">
               <h4 className="text-2xl md:leading-[70px] md:text-[56px] font-black text-left  md:my-0 md:text-center">
-              ONE EVERY DECADE
-             <span className="text-[#DFBC74] font-black"> OED</span> THE ULTIMATE DIGITAL ASSET OF THE FUTURE
+              ONE EVERY DECADE -
+             <span className="text-[#DFBC74] font-black"> OED</span> - THE ULTIMATE DIGITAL ASSET OF THE FUTURE
               </h4>
               <h4 className="md:text-center font-black mt-2 text-lg md:text-3xl">
               THE RAREST CRYPTOCURRENCY EVER CREATED
@@ -102,7 +99,9 @@ export default function Home() {
               <div className="md:px-2 md:w-[55%] w-full mx-auto">
                  <h6 className="md:text-center text-justify py-2">
                  Only 21 OED tokens will ever exist. One is minted every 10 years. The last will be minted in 2135.
-                 Liquidity is locked for 1,000 years—NO rug pulls, NO manipulation, NO centralized control
+                 Liquidity is locked for 1,000 years—NO rug pulls, NO manipulation,
+                 -
+                 NO centralized control
                  Holders earn rewards on every trade, and every transaction
                  fuels the auto buy & burn of Bitcoin Edge (BTEG)
                  </h6>
@@ -119,7 +118,7 @@ export default function Home() {
                          
                       
                         <div className=" gap-5 md:flex items-center  justify-center">
-                        <button onClick={()=> window.location.href = 'https://app.uniswap.org/swap?outputCurrency=0x9928d72c5a45f37a7e46a447f90cb803f21a96b7&chain=base'} className="bg-[#DFBC74]  w-[154px]  h-[44px] rounded-lg text-black text-[16px] ">BUY OED</button>
+                        <button onClick={()=> window.location.href = 'https://app.uniswap.org/swap?outputCurrency=0xe555599d017a9E909bF56aBd7222726c4E4bDd0c&chain=base'} className="bg-[#DFBC74]  w-[154px]  h-[44px] rounded-lg text-black text-[16px] ">BUY OED</button>
                
                         </div>
 
@@ -132,14 +131,14 @@ export default function Home() {
      {/* hero section end here  */}
 
 
-        <div className="container mt-[150px] px-5 md:px-0 mx-auto flex  justify-center items-center flex-col ">
+        <div className="container mt-[150px] px-0 md:px-0 mx-auto flex  justify-center items-center flex-col ">
                 
                 <div className="w-full md:w-[70%] px-6 py-3 border-[2px] border-[#dfbc74] rounded-xl flex justify-between items-center">
-                    <h2 className="text-white flex items-center text-sm">
+                    <h2 className="text-white flex items-center md:text-sm text-[7px] w-full">
                     <ReuseImage height={22} width={22} cl="w-[22px] h-[22px] mr-1 rounded-full" src={Logo} alt="logo"/>
                    
-                        Contract Address</h2>
-                    <button onClick={()=> [window.navigator.clipboard.writeText('0x5bf28FC94f1Ad269dbAC0aA2A205c5C0A5eEfe0C'), setIsCopy(true), setTimeout(()=>{setIsCopy(false)}, 3000)]} className="py-2 px-5 bg-[#dfbc74] text-black font-black rounded-xl text-center">
+                    0xe555599d017a9E909bF56aBd7222726c4E4bDd0c</h2>
+                    <button onClick={()=> [window.navigator.clipboard.writeText('0xe555599d017a9E909bF56aBd7222726c4E4bDd0c'), setIsCopy(true), setTimeout(()=>{setIsCopy(false)}, 3000)]} className="py-2 px-5 bg-[#dfbc74] text-black font-black rounded-xl text-center">
                         {isCopy == true ? "Copied":'Copy'}
                     </button>
                 </div>
@@ -280,7 +279,7 @@ export default function Home() {
                 </h3>
                 
                  <p className="text-justify mt-3 md:text-start text-[16px] md:text-[18px] text-[#fff]">
-                 OED fuels Bitcoin Edge (BTEG's) price growth. Every OED trade includes an automatic 0.5% buy & burn of Bitcoin Edge (BTEG), constantly reducing its supply and increasing its value
+                 OED fuels Bitcoin Edge (BTEG) price growth. Every OED trade includes an automatic 0.5% buy & burn of Bitcoin Edge (BTEG), constantly reducing its supply and increasing its value
                  </p>  
                  <p className="text-justify mt-3 md:text-start text-[16px] md:text-[18px] text-[#fff]">
                Bitcoin Edge  (BTEG) enhances OED's liquidity. The OED-BTEG liquidity pool is locked for 1,000 years, ensuring a stable, manipulation-free market.
@@ -347,7 +346,7 @@ export default function Home() {
 
                 </div>
                 <h3 className="font-bold w-full my-3 text-xl md:text-2xl text-left  ">
-                Unlike other projects that vanish, OED cannot be rug-pulled or manipulated becaus
+                Unlike other projects that vanish, OED cannot be rug-pulled or manipulated because
                 </h3>
                 
                  <p className="text-left mt-3 md:text-start text-[16px] md:text-[18px] text-[#fff]">
@@ -408,7 +407,7 @@ export default function Home() {
       <div className="w-full mt-[100px] flex justify-center items-center flex-col">
                   <div className="w-full md:w-[50%] mx-auto">
                     <h5 className="text-center font-black text-2xl md:text-4xl">HOW TO BUY OED - DON'T WAIT 10 YEARS FOR THE NEXT ONE!</h5>
-                   <h5 className="font-black text-center">Owning OED is simple, but you need to act fast.</h5>
+               
                   </div>
            <div className="container flex-col md:flex-row flex justify-between items-center gap-5 mx-auto mb-5 mt-11">
                <div className="card h-[300px] flex justify-center items-center flex-col w-full md:w-[25%] p-3 rounded-xl border-[1px] border-[#dfbc74] ">

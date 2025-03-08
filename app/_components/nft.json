@@ -265,6 +265,12 @@
             },
             {
                 "indexed": false,
+                "internalType": "uint256",
+                "name": "year",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
                 "internalType": "bool",
                 "name": "isList",
                 "type": "bool"
@@ -402,19 +408,6 @@
     },
     {
         "inputs": [],
-        "name": "LATE_INCREMENT",
-        "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "",
-                "type": "uint256"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [],
         "name": "MAX_SUPPLY",
         "outputs": [
             {
@@ -434,6 +427,19 @@
                 "internalType": "uint256",
                 "name": "",
                 "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "admin",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
             }
         ],
         "stateMutability": "view",
@@ -591,6 +597,41 @@
         "type": "function"
     },
     {
+        "inputs": [],
+        "name": "getMintSchedule",
+        "outputs": [
+            {
+                "components": [
+                    {
+                        "internalType": "uint256",
+                        "name": "tokenId",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "scheduledYear",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "scheduledPrice",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "bool",
+                        "name": "minted",
+                        "type": "bool"
+                    }
+                ],
+                "internalType": "struct OEDNFTMarketplace.NFTSchedule[]",
+                "name": "",
+                "type": "tuple[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
         "inputs": [
             {
                 "internalType": "uint256",
@@ -643,7 +684,7 @@
         "inputs": [
             {
                 "internalType": "address",
-                "name": "owner",
+                "name": "_owner",
                 "type": "address"
             }
         ],
@@ -691,6 +732,42 @@
     {
         "inputs": [
             {
+                "internalType": "string[]",
+                "name": "_names",
+                "type": "string[]"
+            },
+            {
+                "internalType": "string[]",
+                "name": "_descriptions",
+                "type": "string[]"
+            },
+            {
+                "internalType": "string[]",
+                "name": "_images",
+                "type": "string[]"
+            }
+        ],
+        "name": "initializeNFTs",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "initialized",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
                 "internalType": "address",
                 "name": "owner",
                 "type": "address"
@@ -715,24 +792,20 @@
     {
         "inputs": [
             {
-                "internalType": "string",
-                "name": "name",
-                "type": "string"
-            },
-            {
-                "internalType": "string",
-                "name": "description",
-                "type": "string"
-            },
-            {
-                "internalType": "string",
-                "name": "image",
-                "type": "string"
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
             }
         ],
-        "name": "mintNFT",
-        "outputs": [],
-        "stateMutability": "payable",
+        "name": "isTokenListed",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
         "type": "function"
     },
     {
@@ -756,50 +829,6 @@
                 "internalType": "uint256",
                 "name": "",
                 "type": "uint256"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "internalType": "address",
-                "name": "",
-                "type": "address"
-            }
-        ],
-        "name": "nftByOnwer",
-        "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "id",
-                "type": "uint256"
-            },
-            {
-                "internalType": "string",
-                "name": "name",
-                "type": "string"
-            },
-            {
-                "internalType": "string",
-                "name": "description",
-                "type": "string"
-            },
-            {
-                "internalType": "string",
-                "name": "image",
-                "type": "string"
-            },
-            {
-                "internalType": "bool",
-                "name": "isList",
-                "type": "bool"
-            },
-            {
-                "internalType": "bool",
-                "name": "isResold",
-                "type": "bool"
             }
         ],
         "stateMutability": "view",
@@ -839,6 +868,11 @@
                 "internalType": "bool",
                 "name": "isResold",
                 "type": "bool"
+            },
+            {
+                "internalType": "uint256",
+                "name": "year",
+                "type": "uint256"
             }
         ],
         "stateMutability": "view",
@@ -984,6 +1018,25 @@
         "name": "safeTransferFrom",
         "outputs": [],
         "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            }
+        ],
+        "name": "scheduledYearForToken",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "pure",
         "type": "function"
     },
     {

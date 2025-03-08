@@ -92,16 +92,16 @@ const Buynft = async(id:any, price:any)=>{
            <div className="w-full md:w-[40%]">
               
            <div className="bg-[#23362F]  w-full mt-5 rounded-xl p-4 md:p-10">
-                <h4 className="font-black text-2xl">OED VISIONARY</h4>
+                <h4 className="font-black text-2xl">{nft[3]}</h4>
 
                <div className="w-flull mt-6">
                    <div className="flex">
-                      <h5 >Current Ownerr</h5>
+                      <h5 >Current Owner</h5>
                       <h5 className="ml-5">{nft ? `${nft[1]?.slice(0, 9)}...${nft[1]?.slice(36, 42)}`:'loading'}</h5>
                    </div>
 
-                   <div className="bg-[#3F536A] flex items-center px-3 rounded-xl mt-8 relative w-[250px] h-[50px] ">
-                    <div className="absolute -top-5 rounded-xl left-[30%] h-[40px] flex justify-center items-center bg-[#767676] px-3"><h6 className="text-xs">Current Price</h6></div>
+                   <div className="bg-[#3F536A] flex justify-between items-center px-3 rounded-xl mt-8 relative w-[250px] h-[50px] ">
+                   <h6 className="text-xs">Current Price</h6>
                         <h5 className="font-black ">{nft[2] ? ethers.utils.formatEther(nft[2]) :'loading'} ETH</h5>
                    </div>
                </div>

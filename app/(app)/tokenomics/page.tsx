@@ -127,13 +127,13 @@ const Tokenomics = ()=>{
              <div className="container  mt-20 mx-auto ">
              <div className="w-full md:w-[60%] mx-auto">
                 <h5 className="text-xl  font-black ">
-                <span className="text-[#dfbc74]">OED</span> is not just another token. It is an ultra-scarce financialasset designed for the next 1,000 years.
+                <span className="text-[#dfbc74]">OED</span> is not just another token. It is an ultra-scarce financial asset designed for the next 1,000 years.
                 </h5>
                 <h5 className="text-xl mt-4  font-black ">
                 <span className="text-[#dfbc74]">OED</span> MINTING SCHEDULE
                 </h5>
                 <h5 className="text-lg md:text-[23px] mt-4">One <span className="text-[#dfbc74]">OED</span> is minted every 10 years, making each new token an event in finicial History.</h5>
-                <h5 className="text-lg md:text-[23px] mt-4">After the final mint in 2135, no more <span className="text-[#dfbc74]">OED</span> tokens will ever becreated. This ensures ultimate scarcity.</h5>
+                <h5 className="text-lg md:text-[23px] mt-4">After the final mint in 2135, no more <span className="text-[#dfbc74]">OED</span> tokens will ever be created. This ensures ultimate scarcity.</h5>
                 <h5 className="text-lg md:text-[23px] mt-4">2% BUY & SELL TAX DISTRIBUTION</h5>            
                <h5 className="text-lg md:text-[23px] mt-4">Every buy and sell transaction contributes to <span className="text-[#dfbc74]">OED's</span> self-sustaining ecosystem.</h5>
                <h6 className="text-3xl mt-[50px] font-black">Overview <span className="text-[#dfbc74]">OED</span> Tockenomics model’s</h6>
@@ -167,15 +167,15 @@ const Tokenomics = ()=>{
                              <h5 className="my-4 font-black text-md md:text-lg">SELF-SUSTAINING & DEFLATIONARY</h5>
                              <div className="w-full px-5 flex flex-col items-start justify-start ">
                                
-                                 <h6 className="w-full">Every transaction increases liquidity, rewards holders, and burns <span className="text-[#dfbc74]">OED</span>.</h6>
+                                 <h6 className="w-full">Every transaction increases liquidity, rewards holders, and burns <span className="text-[#dfbc74]">BTEG</span>.</h6>
                                  <h5 className="my-2 w-full">
-                                 Unlike Bitcoin, which still has mining inflation, <span className="text-[#dfbc74]">OED</span> becomes harderover time.
+                                 Unlike Bitcoin, which still has mining inflation, <span className="text-[#dfbc74]">OED</span> becomes harder over time.
                                  </h5>
                                  <h6 className="my-2">
                                  While Bitcoin is scarce, <span className="text-[#dfbc74]">OED</span> is 1 million times rarer.
                                  </h6>
                                  <h6 className="my-2">
-                                 Economies will fall. Governments will fall. But <span className="text-[#dfbc74]">OED</span> will continueto rise.
+                                 Economies will fall. Governments will fall. But <span className="text-[#dfbc74]">OED</span> will continue to rise.
                                  </h6>
                            
                            
@@ -214,102 +214,102 @@ const Tokenomics = ()=>{
                </div>
 
                <div className="flex  w-full md:w-[75%] border-b-[2px] border-[#757575] my-4 pb-4 mx-auto justify-between items-start">
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">2025</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">initial lunch</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">N/A</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">10 <span className="text-[#dfbc74]">OED</span> (Locked in LP)</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">2025</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">initial lunch</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">N/A</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">10 <span className="text-[#dfbc74]">OED</span> (Locked in LP)</h5>
                  
                </div>
 
 
 
                <div className="flex  w-full md:w-[75%] border-b-[2px] border-[#757575] my-4 pb-4 mx-auto justify-between items-start">
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">2035</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">March 2, 2035</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">10:09 AM PST</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">11 <span className="text-[#dfbc74]">OED</span></h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">2035</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">March 2, 2035</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">10:09 AM PST</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">11 <span className="text-[#dfbc74]">OED</span></h5>
                  
                </div>
 
                <div className="flex  w-full md:w-[75%] border-b-[2px] border-[#757575] my-4 pb-4 mx-auto justify-between items-start">
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">2045</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">March 2, 2045</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">10:09 AM PST</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">12 <span className="text-[#dfbc74]">OED</span></h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">2045</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">March 2, 2045</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">10:09 AM PST</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">12 <span className="text-[#dfbc74]">OED</span></h5>
                  
                </div>
 
                <div className="flex  w-full md:w-[75%] border-b-[2px] border-[#757575] my-4 pb-4 mx-auto justify-between items-start">
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">2055</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">March 2, 2055</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">10:09 AM PST</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">13 <span className="text-[#dfbc74]">OED</span></h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">2055</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">March 2, 2055</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">10:09 AM PST</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">13 <span className="text-[#dfbc74]">OED</span></h5>
                  
                </div>
 
                <div className="flex  w-full md:w-[75%] border-b-[2px] border-[#757575] my-4 pb-4 mx-auto justify-between items-start">
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">2065</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">March 2, 2065</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">10:09 AM PST</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">14 <span className="text-[#dfbc74]">OED</span></h5>
-                 
-               </div>
-
-
-               <div className="flex  w-full md:w-[75%] border-b-[2px] border-[#757575] my-4 pb-4 mx-auto justify-between items-start">
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">2075</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">March 2, 2075</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">10:09 AM PST</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">15 <span className="text-[#dfbc74]">OED</span></h5>
-                 
-               </div>
-
-               <div className="flex  w-full md:w-[75%] border-b-[2px] border-[#757575] my-4 pb-4 mx-auto justify-between items-start">
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">2085</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">March 2, 2085</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">10:09 AM PST</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">16 <span className="text-[#dfbc74]">OED</span></h5>
-                 
-               </div>
-
-               <div className="flex  w-full md:w-[75%] border-b-[2px] border-[#757575] my-4 pb-4 mx-auto justify-between items-start">
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">2095</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">March 2, 2095</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">10:09 AM PST</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">17 <span className="text-[#dfbc74]">OED</span></h5>
-                 
-               </div>
-
-               <div className="flex  w-full md:w-[75%] border-b-[2px] border-[#757575] my-4 pb-4 mx-auto justify-between items-start">
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">2105</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">March 2, 2105</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">10:09 AM PST</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">18 <span className="text-[#dfbc74]">OED</span></h5>
-                 
-               </div>
-
-               <div className="flex  w-full md:w-[75%] border-b-[2px] border-[#757575] my-4 pb-4 mx-auto justify-between items-start">
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">2115</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">March 2, 2115</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">10:09 AM PST</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">19 <span className="text-[#dfbc74]">OED</span></h5>
-                 
-               </div>
-
-               <div className="flex  w-full md:w-[75%] border-b-[2px] border-[#757575] my-4 pb-4 mx-auto justify-between items-start">
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">2125</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">March 2, 2125</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">10:09 AM PST</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">20 <span className="text-[#dfbc74]">OED</span></h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">2065</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">March 2, 2065</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">10:09 AM PST</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">14 <span className="text-[#dfbc74]">OED</span></h5>
                  
                </div>
 
 
                <div className="flex  w-full md:w-[75%] border-b-[2px] border-[#757575] my-4 pb-4 mx-auto justify-between items-start">
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">2135</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">March 2, 2135</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]">10:09 AM PST</h5>
-                 <h5 className="text-[12px] md:text-md w-[25%] text-[#757575]"><span className="text-[#dfbc74]">21 OED(Final Minit)</span></h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">2075</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">March 2, 2075</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">10:09 AM PST</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">15 <span className="text-[#dfbc74]">OED</span></h5>
+                 
+               </div>
+
+               <div className="flex  w-full md:w-[75%] border-b-[2px] border-[#757575] my-4 pb-4 mx-auto justify-between items-start">
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">2085</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">March 2, 2085</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">10:09 AM PST</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">16 <span className="text-[#dfbc74]">OED</span></h5>
+                 
+               </div>
+
+               <div className="flex  w-full md:w-[75%] border-b-[2px] border-[#757575] my-4 pb-4 mx-auto justify-between items-start">
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">2095</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">March 2, 2095</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">10:09 AM PST</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">17 <span className="text-[#dfbc74]">OED</span></h5>
+                 
+               </div>
+
+               <div className="flex  w-full md:w-[75%] border-b-[2px] border-[#757575] my-4 pb-4 mx-auto justify-between items-start">
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">2105</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">March 2, 2105</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">10:09 AM PST</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">18 <span className="text-[#dfbc74]">OED</span></h5>
+                 
+               </div>
+
+               <div className="flex  w-full md:w-[75%] border-b-[2px] border-[#757575] my-4 pb-4 mx-auto justify-between items-start">
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">2115</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">March 2, 2115</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">10:09 AM PST</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">19 <span className="text-[#dfbc74]">OED</span></h5>
+                 
+               </div>
+
+               <div className="flex  w-full md:w-[75%] border-b-[2px] border-[#757575] my-4 pb-4 mx-auto justify-between items-start">
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">2125</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">March 2, 2125</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">10:09 AM PST</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">20 <span className="text-[#dfbc74]">OED</span></h5>
+                 
+               </div>
+
+
+               <div className="flex  w-full md:w-[75%] border-b-[2px] border-[#757575] my-4 pb-4 mx-auto justify-between items-start">
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">2135</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">March 2, 2135</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]">10:09 AM PST</h5>
+                 <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]"><span className="text-[#dfbc74]">21 OED(Final Minit)</span></h5>
                  
                </div>
 

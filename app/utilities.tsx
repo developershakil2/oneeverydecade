@@ -20,7 +20,7 @@ const ContextComponent = ({children}:ContextProps)=>{
    
     const [isLoad, setIsLoad] = useState<boolean>(false)
     const [resMessage, setResMessage] = useState<any>('')
-    const contractAddress = '0x6847fC83425776aABEF6f1D5435EBCC8ddc67c5f'
+    const contractAddress = '0x1bB1d4Ad38Fad65ffFDFA31df5983B3c5c74942B'
     const provider = new ethers.providers.JsonRpcProvider('https://mainnet.base.org');
     const contract = new ethers.Contract(contractAddress , ABI, provider)
 

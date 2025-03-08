@@ -21,11 +21,17 @@ const {openNav, setOpenNav} = context
         <>
           <div className="w-full flex justify-center items-center h-[85px]">
              <div className="container px-3 mx-auto flex justify-between items-center h-[85px]">
-                   <div className="nav_left">
+                   <div className="nav_left flex items-center justify-start">
                    <a href="/">
                        <ReuseImage height={85} width={85} cl="w-[70px] h-[70px] rounded-full" src={Logo} alt="logo"/>
                    
                     </a>
+                     {
+                        isWallet == true ? 
+                        "":
+                        <button onClick={()=> window.location.href = '/'} className="bg-[#DFBC74] ml-8 w-[140px] hidden md:block  h-[40px] rounded-lg text-black text-[16px] ">Home</button>
+
+                     }
                    </div>
 
                    <div className="nav_middle">
@@ -42,10 +48,18 @@ const {openNav, setOpenNav} = context
                          <li className="w-full mb-1 flex justify-center items-center md:hidden">
 
                          <div className="icon_group_nav gap-5 flex items-center justify-center">
-                         <button onClick={()=> window.location.href = '/tokenomics'} className="bg-[#DFBC74] w-[160px]  h-[44px] rounded-lg text-black text-[16px] ">Tokenomics</button>
+                         <button onClick={()=> window.location.href = '/'} className="bg-[#DFBC74] w-[160px]  h-[44px] rounded-lg text-black text-[16px] ">Home</button>
                
                         </div>
                          </li>
+
+                         <li className="w-full mb-1 flex justify-center items-center md:hidden">
+
+<div className="icon_group_nav gap-5 flex items-center justify-center">
+<button onClick={()=> window.location.href = '/tokenomics'} className="bg-[#DFBC74] w-[160px]  h-[44px] rounded-lg text-black text-[16px] ">Tokenomics</button>
+
+</div>
+</li>
 
                          <li className="w-full  flex justify-center items-center md:hidden"> <Link  onClick={()=> setOpenNav('-999980%')}  href="/whitepaper">
                         <div className="w-[160px] flex justify-center text-[16px] items-center h-[44px] rounded-lg text-[#111]  bg-[#DFBC74]">
