@@ -111,7 +111,7 @@ const Buynft = async(id:any, price:any)=>{
 
 
                <div className="bg-[#23362F]  w-full mt-5 rounded-xl p-4 md:p-10">
-                <h4 className=" text-2xl">BUY OR MAKE OFFER</h4>
+                <h4 className=" text-2xl">BUY NOW</h4>
 
                <div className="w-full flex justify-between items-center mt-6">
               
