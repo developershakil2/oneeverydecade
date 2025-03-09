@@ -206,7 +206,7 @@ const Docs = ()=>{
 
                     <div className=" py-2 flex justify-between items-center">
                           <h5 className="text-sm  md:text-md w-[50%]">THE LAST OED</h5>
-                          <h5 className="text-sm  md:text-md w-[25%]">2034</h5>
+                          <h5 className="text-sm  md:text-md w-[25%]">2135</h5>
                           <h5 className="text-sm  md:text-md w-[25%] font-black">21.5 ETH</h5>
                     </div>
 

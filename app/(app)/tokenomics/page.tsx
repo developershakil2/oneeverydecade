@@ -386,6 +386,14 @@ const Tokenomics = ()=>{
 
 
 
+
+            <div className="w-full my-5 pb-2 border-b-[2px] border-[#757575] flex justify-between items-center">
+                
+                <h5 className="my-3 text-[9px] md:text-md md:text-[16px]">Reflections will be paid only to holders who hold 0.01 OED or More</h5>
+           
+       </div>
+
+
                      
                  </div>
 
