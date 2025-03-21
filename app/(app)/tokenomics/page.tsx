@@ -312,18 +312,6 @@ const Tokenomics = ()=>{
                  <h5 className="text-[12px] md:text-md w-[25%] text-[#fff]"><span className="text-[#dfbc74]">21 OED(Final Minit)</span></h5>
                  
                </div>
-
-
-
-
-
-
-
-
-
-
-
-
               
   
   

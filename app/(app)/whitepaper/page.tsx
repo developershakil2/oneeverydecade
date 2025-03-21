@@ -151,6 +151,86 @@ const WhitePaper = ()=>{
               </h6>
               </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+              
+         <div className="mt-20  w-full md:w-[80%] py-5 container mx-auto px-3 md:px-10 rounded-xl flex justify-between items-center">
+                 <div className="left  w-full">
+                     <div className="w-full pb-2 border-b-[2px] border-[#757575] flex justify-between items-center">
+                     <h5 className="text-[12px] w-[32%] md:text-2xl text-[#dfbc74] font-black">Tax Component</h5>
+                     <h5 className="text-[12px] w-[32%] md:text-2xl text-[#dfbc74] font-black">Percentage</h5>
+                     <h5 className="text-[12px] w-[32%] md:text-2xl text-[#dfbc74] font-black">Purpose</h5>
+                     </div>
+
+
+
+
+                     <div className="w-full my-5 pb-2 border-b-[2px] border-[#757575] flex justify-between items-center">
+                     <h5 className="my-3 text-[9px] md:text-[16px] w-[33%] ">Auto LIquidity</h5>
+                     <h5 className="my-3 text-[9px] md:text-[16px] w-[33%] ">1%</h5>
+                     <h5 className="my-3 text-[9px] md:text-[16px] w-[33%] ">Strengthens WETH/OED & BTEG/OED liquidity pools</h5>
+
+                     </div>
+
+
+
+                     <div className="w-full my-5 pb-2 border-b-[2px] border-[#757575] flex justify-between items-center">
+                     <h5 className="my-3 text-[9px] md:text-md md:text-[16px] w-[33%] ">OED Holder Reflections</h5>
+                     <h5 className="my-3 text-[9px] md:text-md md:text-[16px] w-[33%] ">0.5%</h5>
+                    
+                    <h5 className="my-3 text-[9px] md:text-md md:text-[16px] w-[33%] ">Distributed to eligible OED holders {`(Excludes LP & Contract Wallets)`}</h5>
+
+                     </div>
+
+                     <div className="w-full my-5 pb-2 border-b-[2px] border-[#757575] flex justify-between items-center">
+                     <h5 className="my-3 text-[9px] md:text-md md:text-[16px] w-[33%] ">BTEG Buy & Burn</h5>
+                     <h5 className="my-3 text-[9px] md:text-md md:text-[16px] w-[33%] ">0.5%</h5>
+                    
+<h5 className="my-3 text-[9px] md:text-md md:text-[16px] w-[33%] ">Collects BTEG from the pool and sends it to the burn wallet</h5>
+                     </div>
+
+
+
+
+                     <div className="w-full my-5 pb-2 border-b-[2px] border-[#757575] flex justify-between items-center">
+                
+                     <h5 className="my-3 text-[9px] md:text-md md:text-[16px] w-[33%] ">Fallback Mechanism</h5>
+                
+                     <h5 className="my-3 text-[9px] md:text-md md:text-[16px] w-[33%]  ">0.5% ETH Reflections {`(if no BTEG is Available)`}</h5>
+                  
+   
+                    <h5 className="my-3 text-[9px] md:text-md md:text-[16px] w-[33%]  ">if no BTEG is in the pool, this allocation is distributed as ETH</h5>
+            </div>
+
+
+
+
+
+            <div className="w-full my-5 pb-2 border-b-[2px] border-[#757575] flex justify-between items-center">
+                
+                <h5 className="my-3 text-[9px] md:text-md md:text-[16px]">Reflections will be paid only to holders who hold 0.01 OED or More</h5>
+           
+       </div>
+
+
+                     
+                 </div>
+
+
+             </div>
+
+
+
            </div>
 
          <Footer/>

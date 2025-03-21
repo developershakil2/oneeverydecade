@@ -1,11 +1,11 @@
 'use client'
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import Logo from './images/logo.jpg'
 import Footer from "./_components/Footer";
 import Nav from "./_components/Nav";
 import ReuseImage from "./_components/ReuseImage";
-
-
+import { API } from '@/app/utilities';
+import Loading from '@/app/images/loading.gif';
 
 
 
@@ -57,7 +57,12 @@ const calculateTimeLeft = () => {
 
 
 export default function Home() {
-
+  const context = useContext(API)
+if(!context){
+  throw new Error("somecomponent should use with context ")
+}
+const {resMessage, isLoad, setResMessage} = context;
+  const [isOpen, setIsOpen] = useState<any>("")
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
   const [isClient, setIsClient] = useState(false);  // State to check if we're on the client
   const [isCopy, setIsCopy] = useState<any>(false)
@@ -78,8 +83,62 @@ export default function Home() {
   }
 
 
+
+
+
+
   return (
+    <>
+         {
+        isLoad == true?   <div className="w-full z-50 h-screen bg-[#000000b2] flex items-center fixed top-0 left-0 justify-center">
+        <ReuseImage height={250} width={250} src={Loading} alt="loading" cl="w-[250px] h-[250px] object-cover rounded-full" />
+    </div>:''
+    }
+      {
+        resMessage != ''?   <div className="w-full z-50 h-screen bg-[#000000b2] flex items-center fixed top-0 left-0 justify-center">
+            <div className="w-[360px] bg-white h-auto p-10 rounded-xl flex justify-center items-center">
+                   <div className="w-full flex justify-center items-center flex-col">
+                     <h2 className="text-black text-xl font-black text-center">
+                        {resMessage}
+                     </h2>
+                     <button onClick={()=> setResMessage('')} className="bg-black mt-4 px-4 rounded-xl py-2 text-white font-black" data-translate data-original-text="okay">Okay</button>
+
+                   </div>
+            </div>
+    </div>:''
+    }
+
+
+
        <div className="home_page">
+   
+
+
+{
+        isOpen != ""?   <div className="w-full z-[200] h-screen bg-[#000000b2] flex items-center fixed top-0 left-0 justify-center">
+            <div className="w-[360px] bg-white h-auto p-10 rounded-xl flex justify-center items-center">
+                   <div className="w-full flex justify-center items-center flex-col">
+                     <h2 className="text-black text-xl font-black text-center">
+                        Buy OED with ETH or BTEG
+                     </h2>
+
+                     <div className="w-full justify-between items-center flex py-5">
+ <button onClick={()=> window.location.href = 'https://app.uniswap.org/swap?chain=base&inputCurrency=0x9928D72C5A45F37A7E46A447f90cB803F21A96b7&outputCurrency=0x730852f09869553488eE3162a47cF70c00A04493'} className="bg-[#DFBC74]  px-4  h-[44px] rounded-lg text-black text-[12px] font-black ">BUY OED with BTEG</button>
+                <button onClick={()=> window.location.href = 'https://app.uniswap.org/swap?outputCurrency=0x730852f09869553488eE3162a47cF70c00A04493&chain=base'} className="bg-[#DFBC74]  px-4  h-[44px] rounded-lg text-black text-[12px] font-black">BUY OED with ETH</button>
+               
+                     </div>
+                     <button onClick={()=> setIsOpen("")} className="bg-black mt-4 px-4 rounded-xl py-2 text-white font-black" >No Thanks</button>
+
+                   </div>
+            </div>
+    </div>:''
+    }
+
+
+
+
+
+
         <Nav isWallet={true}/>
         
         <div className="container relative mt-10 md:mt-[100px] px-2 md:px-0 mx-auto flex  justify-center items-center">
@@ -118,7 +177,7 @@ export default function Home() {
                          
                       
                         <div className=" gap-5 md:flex items-center  justify-center">
-                        <button onClick={()=> window.location.href = 'https://app.uniswap.org/swap?outputCurrency=0xe555599d017a9E909bF56aBd7222726c4E4bDd0c&chain=base'} className="bg-[#DFBC74]  w-[154px]  h-[44px] rounded-lg text-black text-[16px] ">BUY OED</button>
+                        <button onClick={()=> setIsOpen("true")} className="bg-[#DFBC74]  w-[154px]  h-[44px] rounded-lg text-black text-[16px] ">BUY OED</button>
                
                         </div>
 
@@ -137,8 +196,8 @@ export default function Home() {
                     <h2 className="text-white flex items-center md:text-sm text-[7px] w-full">
                     <ReuseImage height={22} width={22} cl="w-[22px] h-[22px] mr-1 rounded-full" src={Logo} alt="logo"/>
                    
-                    0xe555599d017a9E909bF56aBd7222726c4E4bDd0c</h2>
-                    <button onClick={()=> [window.navigator.clipboard.writeText('0xe555599d017a9E909bF56aBd7222726c4E4bDd0c'), setIsCopy(true), setTimeout(()=>{setIsCopy(false)}, 3000)]} className="py-2 px-5 bg-[#dfbc74] text-black font-black rounded-xl text-center">
+                    0x730852f09869553488eE3162a47cF70c00A04493</h2>
+                    <button onClick={()=> [window.navigator.clipboard.writeText('0x730852f09869553488eE3162a47cF70c00A04493'), setIsCopy(true), setTimeout(()=>{setIsCopy(false)}, 3000)]} className="py-2 px-5 bg-[#dfbc74] text-black font-black rounded-xl text-center">
                         {isCopy == true ? "Copied":'Copy'}
                     </button>
                 </div>
@@ -490,6 +549,72 @@ WHY OED IS THE MOST POWERFUL CRYPTO <br className="hidden md:block"/>  EVER CREA
 
 
 
+<div className="mt-20  w-full md:w-[80%] py-5 container mx-auto px-3 md:px-10 rounded-xl flex justify-between items-center">
+                 <div className="left  w-full">
+                     <div className="w-full pb-2 border-b-[2px] border-[#757575] flex justify-between items-center">
+                     <h5 className="text-[12px] w-[32%] md:text-2xl text-[#dfbc74] font-black">Tax Component</h5>
+                     <h5 className="text-[12px] w-[32%] md:text-2xl text-[#dfbc74] font-black">Percentage</h5>
+                     <h5 className="text-[12px] w-[32%] md:text-2xl text-[#dfbc74] font-black">Purpose</h5>
+                     </div>
+
+
+
+
+                     <div className="w-full my-5 pb-2 border-b-[2px] border-[#757575] flex justify-between items-center">
+                     <h5 className="my-3 text-[9px] md:text-[16px] w-[33%] ">Auto LIquidity</h5>
+                     <h5 className="my-3 text-[9px] md:text-[16px] w-[33%] ">1%</h5>
+                     <h5 className="my-3 text-[9px] md:text-[16px] w-[33%] ">Strengthens WETH/OED & BTEG/OED liquidity pools</h5>
+
+                     </div>
+
+
+
+                     <div className="w-full my-5 pb-2 border-b-[2px] border-[#757575] flex justify-between items-center">
+                     <h5 className="my-3 text-[9px] md:text-md md:text-[16px] w-[33%] ">OED Holder Reflections</h5>
+                     <h5 className="my-3 text-[9px] md:text-md md:text-[16px] w-[33%] ">0.5%</h5>
+                    
+                    <h5 className="my-3 text-[9px] md:text-md md:text-[16px] w-[33%] ">Distributed to eligible OED holders {`(Excludes LP & Contract Wallets)`}</h5>
+
+                     </div>
+
+                     <div className="w-full my-5 pb-2 border-b-[2px] border-[#757575] flex justify-between items-center">
+                     <h5 className="my-3 text-[9px] md:text-md md:text-[16px] w-[33%] ">BTEG Buy & Burn</h5>
+                     <h5 className="my-3 text-[9px] md:text-md md:text-[16px] w-[33%] ">0.5%</h5>
+                    
+<h5 className="my-3 text-[9px] md:text-md md:text-[16px] w-[33%] ">Collects BTEG from the pool and sends it to the burn wallet</h5>
+                     </div>
+
+
+
+
+                     <div className="w-full my-5 pb-2 border-b-[2px] border-[#757575] flex justify-between items-center">
+                
+                     <h5 className="my-3 text-[9px] md:text-md md:text-[16px] w-[33%] ">Fallback Mechanism</h5>
+                
+                     <h5 className="my-3 text-[9px] md:text-md md:text-[16px] w-[33%]  ">0.5% ETH Reflections {`(if no BTEG is Available)`}</h5>
+                  
+   
+                    <h5 className="my-3 text-[9px] md:text-md md:text-[16px] w-[33%]  ">if no BTEG is in the pool, this allocation is distributed as ETH</h5>
+            </div>
+
+
+
+
+
+            <div className="w-full my-5 pb-2 border-b-[2px] border-[#757575] flex justify-between items-center">
+                
+                <h5 className="my-3 text-[9px] md:text-md md:text-[16px]">Reflections will be paid only to holders who hold 0.01 OED or More</h5>
+           
+       </div>
+
+
+                     
+                 </div>
+
+
+             </div>
+
+
 
        
 
@@ -497,5 +622,7 @@ WHY OED IS THE MOST POWERFUL CRYPTO <br className="hidden md:block"/>  EVER CREA
 
 
        </div>
+
+       </>
   );
 }
